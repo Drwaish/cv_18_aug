@@ -17,7 +17,7 @@ def resize(image) -> List[List[float]]:
     ------
     Image list[list[float]]
     """
-    resize_image = cv2.resize(image, (256,256), interpolation = cv2.INTER_AREA) #interpolation helps to maintain aspect ratio
+    resize_image = cv2.resize(image, (1024,1024), interpolation = cv2.INTER_LINEAR) #interpolation helps to maintain aspect ratio
     return resize_image
 
 def gray_scale(image) -> List[List[float]]:
